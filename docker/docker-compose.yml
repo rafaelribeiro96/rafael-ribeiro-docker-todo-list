@@ -1,5 +1,4 @@
 version: "3"
-
 services:
   todoback:
     build: todo-app/back-end
@@ -16,7 +15,7 @@ services:
     depends_on:
     - todoback
   todotests:
-    build: todo-app/todotests
+    build: todo-app/tests
     restart: always
     environment: 
       - FRONT_HOST=todofront
